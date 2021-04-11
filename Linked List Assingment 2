@@ -1,0 +1,134 @@
+#include <iostream>
+
+
+
+using namespace std;
+
+
+
+class Node{
+
+ public:
+
+ char data;
+
+ Node*next ;
+
+};
+
+
+
+ void printList(Node*n){
+
+     while(n!=NULL){
+
+         cout << n->data;
+
+         n=n->next;
+
+         
+
+         
+
+     }
+
+ }
+
+ 
+
+}   
+
+
+
+
+
+int main()
+
+{
+
+    Node*head=NULL;
+
+    Node*second=NULL;
+
+    Node*third=NULL;
+
+    Node*fourth=NULL;
+
+    Node*fifth=NULL;
+
+    Node*sixth=Null;
+
+    Node*seventh=Null;
+
+    Node*eighth=Null;
+    
+    Node*ninth=Null;
+
+    Node*tenth=Null;
+
+    Node*eleventh=Null;
+
+    
+
+    head=new Node();
+
+    second=new Node();
+
+    third=new Node();
+
+    fourth=new Node();
+
+    fifth=new Node();
+    
+    sixth=new Node();
+
+    seventh=new Node();
+    
+    eighth=new Node();
+
+    ninth=new Node();
+
+    tenth=new Node();
+
+    eleventh=new Node();
+    
+
+    
+
+    
+
+    
+
+    
+
+    head->data='a';
+    head->next=second;
+    second->data='b';
+    second->next=third;
+    third->data='d';
+    third->next=fourth;
+    fourth->data='e';
+    fourth->next=fifth;
+    fifth->data='l';
+    fifth->next=sixth;
+    sixth->data='r';
+    sixth->next=seventh;
+    seventh->data='a'; 
+    seventh->next=eighth;
+    eighth->data='h'; 
+    eighth->next=ninth;
+    ninth->data='m'; 
+    ninth->next=tenth;
+    tenth->data='a';
+    tenth->next=eleventh;
+    eleventh->data='n';
+    eleventh->next=NULL;
+
+
+ cout<< printList(head);
+
+    
+
+    return 0;
+
+}
